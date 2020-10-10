@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CadastroActivity">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textSize="13pt"
+        android:text="Formulário de Cadastro"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/nome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:hint="Nome:"
+        android:textSize="16pt"
+        app:layout_constraintTop_toBottomOf="@id/titulo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        />
+
+    <EditText
+        android:id="@+id/cpf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:inputType="textPassword"
+        android:hint="CPF:"
+        android:textSize="16pt"
+        app:layout_constraintTop_toBottomOf="@id/nome"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:inputType="textPassword"
+        android:hint="Email:"
+        android:textSize="16pt"
+        app:layout_constraintTop_toBottomOf="@id/cpf"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        />
+
+    <EditText
+        android:id="@+id/senha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:inputType="textPassword"
+        android:hint="Senha:"
+        android:textSize="16pt"
+        app:layout_constraintTop_toBottomOf="@id/email"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        />
+
+
+    <Button
+        android:id="@+id/salvar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="Salvar"
+        android:textColor="@color/white"
+        android:textSize="12pt"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/senha"
+        android:layout_marginTop="100dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
